@@ -1,0 +1,645 @@
+<!Doctype html>
+<!--目录-->
+<!--!!!设定编码方式（有效避免乱码）!!!-->
+<!--标题字-->
+<!--换行(没有结束</br>)-->
+<!--保留格式-->
+<!--水平线(horizontal)-->
+<!--文本字体变粗-->
+<!--文本字体变为斜体-->
+<!--自定义字体(大小，颜色)-->
+<!--右上角字体（x方）-->
+<!--右下角字体-->
+<!--实体符号（<,>,空格）-->
+<!-- 图片以及图片相关的各项属性 -->
+<!-- div和span -->
+
+<!--表格相关-->
+<!--合并单元格-->
+<!-- 表格中的th标签 -->
+<!-- thead，tbody & tfoot 标签 -->
+
+<!-- 超链接 及相关标签-->
+<!-- target属性 -->
+<!-- 图片超链接 -->
+
+<!-- 列表及相关的各项属性 -->
+<!-- maxlength属性 -->
+<!-- type="radio"(单选按钮）选项 -->
+<!-- type="checkbox"复选框（多选项） -->
+<!-- 下拉列表 -->
+<!-- 文本域 -->
+<!-- html的id属性 -->
+<!-- 上传文件的file控件 -->
+<!-- readonly和disable属性 -->
+
+
+
+
+<!-- 重点*****重点*****重点*****重点*****重点*****重点***** -->
+<!-- 表单及相关的各项属性 -->
+<!-- 登录表单 -->
+<!-- 重点*****重点*****重点*****重点*****重点*****重点***** -->
+
+<!---属性（可赋予文字背景等）---->
+<!-- width内部宽度(所占字节'px'占用页面百分比'%')-->
+<!-- height内部高度(所占字节'px'占用页面百分比'%')-->
+<!-- align对齐方式（align="left/right/center"） -->
+<!--color=”色号/具体颜色”-->
+<!--size="字号"-->
+<!-- bgcolor=“色号” 背景颜色 -->
+<!-- background="图片路径"赋予背景属性 -->
+
+
+
+
+<!-- CSS--Cascading style sheet
+     1. 层叠样式表语言，不是编程语言，用于修饰HTML，让它变得更好看
+     2. HTML还是主题，CSS依附于HTML
+     3. HTML中嵌入CSS的三种方式
+        a. 内联定义
+        b. 定义内部样式块对象：
+            1. 标签选择器
+            2. id选择器
+            3. class选择器(类选择器)
+        c. 链入外部样式表文件
+
+-->
+<html>
+    <head>
+        <!--设定编码方式（有效避免乱码）-->
+        <!--一般情况下，未指定编码方式时，Windows默认用GBK（简体中文）的解码方式-->
+        <!--GBK和大部分程序员的编码方式不同，容易出现乱码-->
+        <meta charset="UTF-8">
+        <!--网页名称-->
+        <title>
+            Html基础代码表
+        </title>
+        <!-- b. 定义内部样式块对象： -->
+        <style type="text/css">
+            /* 1. 标签选择器: */
+            p{
+                text-indent:4px;
+                border-style:ridge;
+                text-align:left;
+            }
+            /* 2.id选择器 */
+            #detail{
+                Position:relative;
+                left:+30px
+            }
+            /* 3. class选择器(类选择器) */
+            .subtitle{
+                font-style:italic;
+                color:red;
+                font-family: 'Times New Roman', Times, serif;
+            }
+        </style>
+
+    </head>
+    <body>
+        <img>
+        <!-----标题字---->
+        <h1>你好</h1>
+        <h2>你好</h2>
+        <h3 class="subtitle">你好</h3>
+        <h4>你好</h4>
+        <h5>你好</h5>
+        <h6>你好</h6>
+        <hr color="#000099">
+        <!---段落--->
+        <h3 class="subtitle">段落</h3>
+        <p>
+            HTML的全称为超文本标记语言，是一种标记语言。
+            它包括一系列标签．通过这些标签可以将网络上的文档格式统一，使分散的Internet资源连接为一个逻辑整体。
+            HTML文本是由HTML命令组成的描述性文本，HTML命令可以说明文字，图形、动画、声音、表格、链接等。
+        </p>
+        <!--水平线(horizontal)-->
+        <!--color=”色号/具体颜色”属性列表在开头-->
+        <hr color=“red”>
+        <!-----换行(没有结束</br>)------>
+        <p>
+        超文本是一种组织信息的方式，它通过超级链接方法将文本中的文字、图表与其他信息媒体相关联。
+        <br>这些相互关联的信息媒体可能在同一文本中，也可能是其他文件，或是地理位置相距遥远的某台计算机上的文件。
+        <br>这种组织信息方式将分布在不同位置的信息资源用随机方式进行连接，为人们查找，检索信息提供方便。
+        </p>
+        <hr color= "red">
+        <!--保留格式-->
+        <!--保留编辑时的样式-->
+        <h3 class="subtitle">保留格式</h3>
+        <pre>
+            HTML的全称为超文本标记语言，是一种标记语言。
+            它包括一系列标签．通过这些标签可以将网络上的文档格式统一，使分散的Internet资源连接为一个逻辑整体。
+            HTML文本是由HTML命令组成的描述性文本，HTML命令可以说明文字，图形、动画、声音、表格、链接等。
+        </pre>
+        <hr color= "red">
+        <!--文本字体变粗-->
+        <h3 class="subtitle">粗体字</h3>
+        <b>
+        超文本是一种组织信息的方式，它通过超级链接方法将文本中的文字、图表与其他信息媒体相关联。
+        <br>这些相互关联的信息媒体可能在同一文本中，也可能是其他文件，或是地理位置相距遥远的某台计算机上的文件。
+        <br>这种组织信息方式将分布在不同位置的信息资源用随机方式进行连接，为人们查找，检索信息提供方便。
+        </b>
+        <hr color= "red">
+        <!--文本字体变为斜体-->
+        <h3 class="subtitle">斜体字</h3>
+        <i>
+        超文本是一种组织信息的方式，它通过超级链接方法将文本中的文字、图表与其他信息媒体相关联。
+        <br>这些相互关联的信息媒体可能在同一文本中，也可能是其他文件，或是地理位置相距遥远的某台计算机上的文件。
+        <br>这种组织信息方式将分布在不同位置的信息资源用随机方式进行连接，为人们查找，检索信息提供方便。
+        </i>
+        <hr color= "red">
+        <!--插入字（下划线字体）-->
+        <h3 class="subtitle">下划线</h3>
+        <ins>超文本</ins>是一种组织信息的方式，它通过超级链接方法将文本中的<ins>文字、图表与其他信息媒体相关联。</ins>
+        <br>这些相互关联的信息媒体可能在同一文本中，也可能是其他文件，或是地理位置相距遥远的某台计算机上的文件。
+        <br>这种组织信息方式将分布在不同位置的信息资源用随机方式进行连接，为人们查找，检索信息提供方便。
+        <hr color= "red">
+        <!--删除字（画横线字体）-->
+        <h3 class="subtitle">删除字</h3>
+        <del>
+        超文本是一种组织信息的方式，它通过超级链接方法将文本中的文字、图表与其他信息媒体相关联。
+        <br>这些相互关联的信息媒体可能在同一文本中，也可能是其他文件，或是地理位置相距遥远的某台计算机上的文件。
+        <br>这种组织信息方式将分布在不同位置的信息资源用随机方式进行连接，为人们查找，检索信息提供方便。
+        </del>
+        <hr color= "red">
+        <!--右上角字体（x方）-->
+        <h3 class="subtitle">右上角字体</h3>
+        好东西<sup>假</sup><br>
+        2的立方=2<sup>3</sup>
+        <hr color= "red">
+        <!--右下角字体-->
+        <h3 class="subtitle">右下角字体</h3>
+        预期价格:
+        <ins>
+            P
+            <sub>
+                t+1
+            </sub>
+        </ins>
+        <hr color= "red">
+        <!--自定义字体(大小，颜色)-->
+        <h3 class="subtitle">自定义文本样式(大小，颜色）</h3>
+        <font color="#ffb3d9" size="5">
+            超文本是一种组织信息的方式，它通过超级链接方法将文本中的文字、图表与其他信息媒体相关联。
+            <br>这些相互关联的信息媒体可能在同一文本中，也可能是其他文件，或是地理位置相距遥远的某台计算机上的文件。
+            <br>这种组织信息方式将分布在不同位置的信息资源用随机方式进行连接，为人们查找，检索信息提供方便。
+        </font>
+        <hr color= "red">
+        <!--实体符号-->
+        <!--空格(&nbsp;)-->
+        <!--小于号（&lt）-->
+        <!--大于号（&gt）-->
+
+        <!--文字中间加空格(&nbsp;)-->
+        <h3 class="subtitle">空格(& nbsp)</h3>
+        <font color="#ff0000" size="3">
+            一个"& nbsp;"等于一个空格
+        </font>
+        <p>
+            e.g<br>
+            1和2之间差了10个空格<br>
+            1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2
+        </p>
+        <hr color= "red">
+        <!--小于号（&lt）-->
+        <h3 class="subtitle">小于号</h3>
+        <p>1&lt;2</p>
+        <hr color= "red">
+        <!--大于号（&lt）-->
+        <h3 class="subtitle">大于号</h3>
+        <p>2&gt;1</p>
+        <hr color= "red">
+        <!--表格相关-->
+        <h3 class="subtitle">表格 </h3>
+        <!--border(表格外围边框宽度)=“像素（1px,2px,3px）”-->
+        <!-- width内部宽度(所占字节'px'占用页面百分比'%')-->
+        <!-- height内部高度(所占字节'px'占用页面百分比'%')-->
+        <!-- align对齐方式（align="left/right/center"） -->
+        <table border="1px" width="30%" height="10px" align="center" >
+            <!--第一行（tr=行）-->
+            <tr>
+                <!--第一位-->
+                <td>199</td>
+                <!--第二位-->
+                <td>299</td>
+                <!--第三位-->
+                <td>399</td>
+            </tr>
+            <!--第二行-->
+            <tr>
+                <!--第一位-->
+                <td>199</td>
+                <td>29444444444449</td>
+                <td>399</td>
+            </tr>
+            <!--第三行-->
+            <tr>
+                <!--第一位-->
+                <td>199</td>
+                <td>299</td>
+                <td>399</td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <hr color= "red">
+        <!--合并单元格-->
+        <h3 class="subtitle">合并单元格</h3>
+        <!-- 左右列合并可选择其一删除 -->
+        <!-- 上下行合并只能删除下面一行 -->
+        <table border="1px" width="30%" height="10px" align="center" >
+            <tr>
+                <!--colspan列合并-->
+                <!--删除其中一列-->
+                <!--在合并的另一列中加入属性（colspan="要合并的列数"）-->
+                <td>a</td>
+                <td colspan="2">bc</td>
+            </tr>
+            <tr>
+                <!--rowspan行合并-->
+                <!--删除下面一行-->
+                <!--在合并的另一行中加入属性（rowspan="要合并的行数"）-->
+                <td>a</td>
+                <td>b</td>
+                <td rowspan="2">bc</td>
+            </tr><tr>
+                <td>a</td>
+                <td>b</td>
+                <!-- 被合并的行 <td>c</td> -->
+            </tr>
+        </table>
+        <hr color= "red">
+        <!--th标签-->
+        <h3 class="subtitle">th标签</h3>
+        <table border="1px" width="20%" height="10px">
+            <!--第一行（tr=行）-->
+            <tr>
+                <!-- th可以代替td作为单元格，并且将内部信息自动变粗并且居中 -->
+                <th>姓名</th>
+                <th>学号</th>
+                <th>专业</th>
+            </tr>
+            <tr>
+            <td>gg</td>
+            <td>194999987</td>
+            <td>CS</td>
+        </tr>
+            <!--第三行-->
+            <tr>
+            <td>prprpr</td>
+            <td>66666666</td>
+            <td>ECON</td>
+        </tr>
+        </table>
+        <hr color= "red">
+        <!-- thead，tbody & tfoot 标签 -->
+        <!-- 将表格分为三个部分，方便JS进行操作编辑 -->
+        <!-- 表面看上去和td，th没什么区别 -->
+        <h3 class="subtitle">thead，tbody & tfoot 标签</h3>
+        <!-- bgcolor赋予背景颜色属性 -->
+        <table border="1px" width="20%" height="10%" bgcolod="#3399ff">
+            <!-- thead -->
+            <thead>
+                <tr>
+                    <!-- th可以代替td作为单元格，并且将内部信息自动变粗并且居中 -->
+                    <th>姓名</th>
+                    <th>学号</th>
+                    <th>专业</th>
+                </tr>
+            </thead>
+            <!-- tbody -->
+            <tbody>
+                <tr>
+                    <td>gg</td>
+                    <td>194999987</td>
+                    <td>CS</td>
+                </tr>
+            </tbody>
+            <!-- tfoot -->
+            <tfoot>
+                <tr>
+                    <td>prprpr</td>
+                    <td>66666666</td>
+                    <td>ECON</td>
+                </tr>
+            </tfoot>
+        </table>
+        <hr color= "red">
+        <!-- 图片以及图片相关的各项属性 -->
+        <h3 class="subtitle">图片相关标签img.</h3>
+        <!-- <img src="图片路径"/> -->
+        <!-- 可以在末尾加‘/’表示结束 -->
+        <!-- 也可额外写</img> -->
+        <!-- 图片可添加"width"属性,高度会等比例缩放 -->
+        <!-- ！！！不要手动设置height数值，否则会失真！！！ -->
+        <!-- 设置图片“title”属性，当鼠标停留在图片上时会显示title -->
+        <!-- alt=“想显示的信息”当图片加载失败时所显示的信息 -->
+        <div align="center">
+            <img src="D:\JS\html_学习\pokemon.jpg" width="10%" title="皮卡丘" alt="皮卡丘离家出走了，不想理你并且向你放了个屁。">
+            <br>你好皮卡丘
+        </img>
+        </div>
+        <hr color= "red">
+        <!-- 超链接 及相关标签-->
+        <h3 class="subtitle">超链接</h3>
+        <!-- <a href="目标网址/本地内容"></a> -->
+        <a href="http://www.ifsp.tv">看视频就来这</a>
+        <br>
+        <a href="瞎扯淡.html">劝你不要点我~~</a>
+        <br>
+        <!-- 图片超链接 -->
+        <!-- 超链接标签下嵌入图片标签 -->
+        <a href="https://game.portal-pokemon.com/sword_shield/sc/">
+            <img src="D:\JS\html_学习\pokemon.jpg" width="10%"/>
+        </a>
+        <!-- target属性 -->
+        <!-- 用预设定打开方式（当前窗口/新窗口打开） -->
+        <!-- 若不设置则，默认为当前窗口打开 -->
+        <br>
+        <!-- '_self'在原有页面跳转 -->
+        <a href="瞎扯淡.html" target="_self">target属性"_self"</a>
+        <br>
+        <!-- '_parent'当前页面的父窗口 -->
+        <a href="瞎扯淡.html" target="_parent">target属性"_parent"</a>
+        <br>
+        <!-- '_blank'开启新的标签页并跳转 -->
+        <a href="瞎扯淡.html" target="_blank">target属性"_blank"</a>
+        <br>
+        <!-- '_top'当前标签页的顶级窗口 -->
+        target属性"_top"
+        <br>
+        <iframe src="瞎扯淡.html" target="_top" width="20%" height="10%"></iframe>
+        <br>
+        <hr color= "red">
+        <!-- 列表及相关的各项属性 -->
+        <h3 class="subtitle">列表</h3>
+            <!-- 无序列表 -->
+            <!-- 在ul标签中赋予type属性以设置排列标签 -->
+            <h4>无序列表</h4>
+            <ul type="square">
+                <!-- <li></li>列表项 -->
+                <li>中国</li>
+                    <ul type="circle">
+                        <li>北京</li>
+                        <li>上海</li>
+                        <li>广州</li>
+                        <li>深圳</li>
+                    </ul>
+                <li>韩国</li>
+                <li>日本</li>
+                <li>美国</li>
+                <li>俄罗斯</li>
+            </ul>
+            <!-- 有序列表 -->
+            <!-- 有编号的列表 -->
+            <h4>有序列表</h4>
+            <ol type="A">
+                <li>日本</li>
+                    <ol type="I">
+                        <li>汽车制造</li>
+                        <li>航天</li>
+                        <li>动漫</li>
+                    </ol>
+                <li>韩国</li>
+                    <ol>
+                        <li>娱乐</li>
+                        <li>泡菜</li>
+                        <li>服务</li>
+                    </ol>
+                <li>欧美</li>
+                    <ol type="i">
+                        <li>医疗</li>
+                        <li>精密仪器</li>
+                        <li>汽车制造</li>
+                    </ol>
+                <li>印度</li>
+                    <ol type="a">
+                        <li>垃圾</li>
+                        <li>废物</li>
+                        <li>没用</li>
+                    </ol>
+            </ol>
+            <hr color= "red">
+        <!-- 表单及相关的各项属性 -->
+        <h3 class="subtitle">表单</h3>
+        <!-- 表单（form）用于收集用户数据信息
+             换句话说就是网页注册
+             表单发送请求并且携带数据给服务器
+             表单最主要的作用是收据数据
+             1. 语法格式<form></form>
+             2. 一个网页上可以有多个表单对象
+             3.form标签中有一个action属性，这个属性和超链接的href相同，并且需要填写url
+        -->
+        <form action="https://uwcssa.ca/">
+            <!-- 按钮，提交表单的按钮，只要点击就能发送请求 -->
+            <!-- 所有提交表单的按钮"type"必须是"submit",不能随便写 -->
+            <!-- submit提交按钮，放到form外部时是无效的 -->
+            <button type="submit">
+                UWCSSA
+            </button>
+            <!-- type如果是button则是一个普通按钮，无法提交表单 -->
+            <button type="button">
+                UWCSSA
+            </button>
+        </form>
+        <!-- 登录表单 -->
+        <!-- http://192.168.145.2:8080/crm/login
+                协议：http协议
+                IP地址是：192.168.145.2
+                8080是服务器上端口对应的服务
+                /crm/login：是服务器上的资源名(可能是某个处理登录的JAVA程序)
+         -->
+         <!-- ***提交表单时，name属性非常重要，有name才会提交，没有name不会提交***
+              提交时格式为"url?name=value&name=value&name=value&name=value
+              可参考谷歌翻译
+        -->
+        <form action="http://192.168.145.2:8080/crm/login">
+            <!-- input是输入域，type决定展示样式 -->
+            <!-- text是文本框 -->
+            用户名:<input type="text" name="name">
+            <br>
+            <!-- password是密码输入框，自动隐匿输入文本 -->
+            密码:<input type="password" name="password">
+            <br>
+            <button type="submit">
+                登录
+            </button>
+            <br>
+        </form>
+        <hr color= "red">
+        <h3 class="subtitle">用户注册表单</h3>
+        <form action="http://192.168.145.2:8080/crm/login">
+            <!-- maxlength属性 -->
+            <!-- maxlength设置最多可输入的字符数 -->
+            用户名:<input type="text" name="username" maxlength="5">
+            <br>
+            密码:<input type="password" name="pw">
+            <br>
+            <!-- type="radio"(单选按钮）选项 -->
+            <!-- 同一组单选按钮 “name” 值 需要一致 -->
+            <!-- name不一致时，两个选项不为同一组（无法作为单选） -->
+            <!-- checked意味着默认选中（可更改） -->
+            性别:<input type="radio" name="sex" value="male" checked>男
+                 <input type="radio" name="sex" value="female">女
+            <br>
+            <!-- type="checkbox"复选框（多选项） -->
+            <!-- “value”需要程序员提供 -->
+            <!-- 同一组的复选框“name”也需要一致 -->
+            兴趣爱好:
+            <br>
+            <input type="checkbox" name="prefer" value="smoke">抽烟
+            <br>
+            <input type="checkbox" name="prefer" value="drunk">喝酒
+            <br>
+            <input type="checkbox" name="prefer" value="perm">烫头
+            <br>
+            <!-- 下拉列表 -->
+            <!-- selected默认选中，和其他选项不同 -->
+            <!-- multiple设置下拉列表多选 -->
+            <!-- size设置下拉列表最多显示的选项数量 -->
+            学历:
+            <select name="academic" size="4"multiple>
+                <option value="junior high school">初中</option>
+                <option value="highschool">高中</option>
+                <option value="undergraduate" selected>本科</option>
+                <option value="graduate">研究生</option>
+                <option value="doctor">博士</option>
+            </select>
+            <br>
+            简介:
+            <br>
+            <!-- 文本域 -->
+            <!-- placeholder文本框中的预留字符，会被输入文字覆盖，并且不影响输入 -->
+            <!-- html的id属性 -->
+            <!-- 
+            1.在任何一个html节点上都有id属性
+            2.在任何一个网页中id属性是不能重复的
+            3.id属性代表了一个节点，是各个节点的特殊编号
+            4.id属性是为了后期，方便javascript对html的内容进行更改时所需要的信息，
+              id能够有效地帮助javascript对html节点进行定为和获取相应信息
+            5.通过id属性，JavaScript可以有效地获取节点并对其进行操作，
+              使得网页呈现动态效果；JavaScript能让静态网页变为动态网页
+            -->
+            
+            <textarea name="detail" id="detail" cols="50%" rows="10" placeholder="输入你的信息..."></textarea>
+            <br>
+            <!-- 上传文件的file控件 -->
+            <!-- 选择需要上传的文件 -->
+            <!-- 并将文件上传至服务器 -->
+            文件:<input type="file"/>
+            <br>
+            <!-- 提交按钮不能有value，不然按钮的value也会提交给服务器 -->
+            <button type="submit">
+                注册
+            </button>
+            <button type="reset">
+                重置
+            </button>
+        </form>
+        <hr color= "red">
+        <h3 class="subtitle">readonly和disabled</h3>
+        <!-- readonly和disable属性 -->
+        <!-- readonly和disabled都表示只读，无法更改 -->
+        <!-- 但是readonly修饰的表单项可以提交给服务器，disabled的无法提交 -->
+        <form action="http://192.168.145.2:8080/crm/login">
+            用户名:<input type="text" name="username" value="111" readonly>
+            <br>
+            密码:<input type="password" name="password" value="222" disabled>
+            <br>
+            <button type="submit">
+                提交
+            </button>
+            <br>
+        </form>
+        <hr color= "red">
+        <h3 class="subtitle">div和span</h3>
+        <font size="3">
+            打开源代码进行观看
+        </font>
+        <!-- div和span -->
+        <!-- 1. div和span都是图层
+            2. 主要作用是网页布局
+            3. 每个div和span左上角都有一个x,y轴坐标
+                用于定为网页位置
+            4. 更加灵活地定位网页布局
+        -->
+        <!-- div和span的区别 
+            div：默认情况下，独自占用一行
+            span：不会独自占用一行
+        -->   
+        <hr color= "red">
+        <h3 class="subtitle">HTML中嵌入CSS的三种方式</h3>
+        打开源代码进行观看
+        <!-- 1.内联定义： 
+                    通过在HTML标签中加入style属性进行定义
+                    语法样式：
+                        <标签 style="属性名:属性值;
+                                     属性名:属性值;
+                                     属性名:属性值;
+                                     属性名:属性值;
+                                     ...   ">
+                        </标签>
+        -->
+        <!-- 2.定义内部样式块对象
+        
+            <style type="text/css">
+                /* 这是CSS的注释，和java的注释方式一样 */
+                /* 在HTML的head标签中嵌入style标签用于影响网页整体布局
+                 ***实际操作请看HTML的head标签部分***
+                 */
+                 /* 语法格式：
+                        选择器{
+                            属性名:属性值;
+                            属性名:属性值;
+                            属性名:属性值;
+                            属性名:属性值;
+                            ...   
+                        }
+                 */
+                 /* 常见的选择器有三种：
+                 ***实际操作请看HTML的head标签部分***
+                        1. 标签选择器
+                        2. id选择器
+                        3. class选择器(类选择器) 
+                 */
+                 /* 1. 标签选择器:
+                    ***标签选择器会影响所有同名称的标签***
+                    语法样式：
+                        标签名{
+                            属性名:属性值;
+                            属性名:属性值;
+                            属性名:属性值;
+                            属性名:属性值;
+                            ...   
+                        } 
+                 */
+                 /* 2.id选择器
+                  ***通过选择id的方式对特定标签进行布局更改***
+                    语法样式
+                        #id{
+                            属性名:属性值;
+                            属性名:属性值;
+                            属性名:属性值;
+                            属性名:属性值;
+                            ... 
+                        }
+                  */
+                  /* 3. class选择器(类选择器)
+                ***通过给标签设置class属性来进行分类，
+                   class的值相同的为一个类
+                   最终对同一类的标签进行修改布局***
+
+                  语法样式：
+                        .class{
+                            属性名:属性值;
+                            属性名:属性值;
+                            属性名:属性值;
+                            属性名:属性值;
+                            ... 
+                        } */
+            </style> 
+        -->
+       
+    </body>
+</html>
