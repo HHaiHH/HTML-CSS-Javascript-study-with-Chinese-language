@@ -1,0 +1,34 @@
+#table {
+  position: relative;
+  left: +20%;
+}
+
+/* 隐藏样式 */
+#CNcity {
+  display: none;
+}
+/* 文本修饰 */
+#India {
+  text-decoration: line-through;
+}
+/* 设置鼠标的悬停效果 */
+/* hover两边不能有空格 */
+span:hover {
+  font-weight: lighter;
+  text-decoration: underline;
+}
+/* 内外补丁的区别:
+    当盒子套盒子时以左上角为坐标填充补丁
+      内补丁：
+        在盒子内部增加一个补丁
+      外补丁：
+        在盒子外部增加一个补丁
+*/
+/* 浮动样式 */
+#Pikachu {
+  float: left;
+}
+/* 光标样式 */
+.subtitle {
+  cursor: crosshair;
+}
