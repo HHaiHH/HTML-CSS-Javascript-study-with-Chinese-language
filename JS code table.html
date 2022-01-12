@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>JS learning</title>
+  </head>
+  <body>
+    <h3>嵌入JS的三种方法</h3>
+    <ol type="1">
+      <li>行间事件</li>
+      打开源代码观看
+      <!-- 1. 需求：当用户点击按钮时，弹出窗口显示"hello world" 
+           2. JS是一种事件驱动语言，一般是由某个事件发生后才执行某段代码，
+              比如：鼠标单击，双击，划过等；
+              并且，任何事件都有对应的句柄
+              比如: 单击（click）对应“onclick”，
+                    鼠标滑过（mouseover）对应“onmouseover”
+           3. 所有句柄都以标签的属性形式存在；
+              只要在有句柄的网页项目中发生了对应事件，
+              那么就会执行在句柄中注册的JS文件
+           4. 时间发生的三要素：
+                  a. 事件源
+                  b. 事件监听器（一般浏览器中自带）
+                  c. 事件
+           5. 被注册的句柄并不是在浏览器打开时就执行的，
+              浏览器打开时只是将JS文件注册进句柄中
+              只有当事件监听器，发现对应事件发生时，句柄才被执行
+              具体实例如下:
+      -->
+      <!-- JS代码可以以分号结尾 -->
+      <button velue="hello world" onclick="alert('Hello world!')">hello</button>
+      <li>脚本块</li>
+      打开源代码观看
+      <!-- 脚本块没有位置限制，
+           可以将脚本块放在任何地方
+           一个页面可以出现多个脚本块
+      -->
+      <script type="text/javascript">
+        // 在script中直接填写JS代码，代码会从上到下逐一执行
+        alert("hello world!");
+        alert("wow,you see me!");
+        alert("see you later~");
+      </script>
+      <li>引入外部独立JS文件</li>
+      打开源代码观看
+      <!-- 在引入外部JS代码时
+           按照被引入的代码表从上而下，逐行执行
+      -->
+      <script
+        type="text/javascript"
+        src="D:\JS\HTML-CSS-Javascript-study-with-Chinese-language\helloworld.js"
+      >
+        // 引入外部js文件之后再写的代码不会执行！！！
+      </script>
+    </ol>
+  </body>
+</html>
